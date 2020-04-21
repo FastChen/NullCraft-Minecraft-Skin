@@ -94,13 +94,18 @@ namespace NullCraft_Minecraft_Skin
             {
                 mojang_json = DecodeBase64("utf-8", get_value["properties"][0]["value"].ToString());
                 JObject get_skin_url = (JObject)JsonConvert.DeserializeObject(mojang_json);
-                get_skin_url["textures"]["SKIN"]["url"].ToString();
+
                 PictureBox_Skins.Image = null;
                 PictureBox_Skins.SizeMode = PictureBoxSizeMode.Zoom;
                 PictureBox_Skins.LoadAsync(get_skin_url["textures"]["SKIN"]["url"].ToString());
+                
+                PictureBox_Capes.Image = null;
+                PictureBox_Capes.SizeMode = PictureBoxSizeMode.Zoom;
+                PictureBox_Capes.LoadAsync(get_skin_url["textures"]["SKIN"]["url"].ToString());
             }
             catch {
                 PictureBox_Skins.Image = null;
+                PictureBox_Capes.Image = null;
                 MessageBox.Show("获取失败", "错误", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
