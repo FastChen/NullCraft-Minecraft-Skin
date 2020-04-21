@@ -101,7 +101,7 @@ namespace NullCraft_Minecraft_Skin
                 
                 PictureBox_Capes.Image = null;
                 PictureBox_Capes.SizeMode = PictureBoxSizeMode.Zoom;
-                PictureBox_Capes.LoadAsync(get_skin_url["textures"]["SKIN"]["url"].ToString());
+                PictureBox_Capes.LoadAsync(get_skin_url["textures"]["CAPE"]["url"].ToString());
             }
             catch {
                 PictureBox_Skins.Image = null;
