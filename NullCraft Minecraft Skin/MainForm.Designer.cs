@@ -161,7 +161,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(367, 40);
             this.label1.TabIndex = 24;
-            this.label1.Text = "MojangAPI 不支持 头像和披风";
+            this.label1.Text = "MojangAPI 不支持 头像";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
